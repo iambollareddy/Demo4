@@ -19,4 +19,4 @@ jobs:
       working-directory: 'C:\Users\chandra.bollareddy\AppData\Local\Programs\SmartBear\ReadyAPI-3.43.1\bin'
       run: |
      
-        C:\Users\chandra.bollareddy\AppData\Local\Programs\SmartBear\ReadyAPI-3.43.1\bin\testrunner.bat -r -a -j -f${WORKSPACE} "-RJUnit-Style HTML Report" -FXML "-EDefault environment" D:\ReadyAPI-Testing\Demo4-readyapi-project
+        C:\Users\chandra.bollareddy\AppData\Local\Programs\SmartBear\ReadyAPI-3.43.1\bin\testrunner.bat "-sDemo4_TestSuite" -r -a -j "-fD:\ReadyAPI Reports" "-RJUnit-Style HTML Report" -FXML "-EDefault environment" D:\ReadyAPI-Testing\Demo4-readyapi-project
