@@ -8,7 +8,8 @@ on:
     
 jobs:
   # This workflow contains a single job called "greet"
-  execute-test:
+ # execute-test:
+ Demo4:
     
     runs-on: self-hosted
 
