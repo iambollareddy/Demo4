@@ -7,15 +7,16 @@ on:
   workflow_dispatch:
     
 jobs:
-  
+  # This workflow contains a single job called "greet"
   execute-test:
     
-    runs-on: windows-latest
+    runs-on: self-hosted
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
     - name: Demo4
       working-directory: 'C:\Users\chandra.bollareddy\AppData\Local\Programs\SmartBear\ReadyAPI-3.43.1\bin'
-      run: |
-       C:\Users\chandra.bollareddy\AppData\Local\Programs\SmartBear\ReadyAPI-3.43.1\bin\testrunner.bat "-sDemo4_TestSuite" -r -a -j "-fD:\ReadyAPI Reports" "-RJUnit-Style HTML Report" -FXML "-EDefault environment" D:\ReadyAPI-Testing\Demo4-readyapi-project
+      run: | 
+      
+        C:\Users\chandra.bollareddy\AppData\Local\Programs\SmartBear\ReadyAPI-3.43.1\bin\testrunner.bat -r -a -j -f${WORKSPACE} "-RJUnit-Style HTML Report" -FXML "-EDefault environment" D:\ReadyAPI-Testing\Demo4-readyapi-project
