@@ -4,10 +4,10 @@ name: Demo4
 
 
 on:
-  workflow_dispatch:
+  workflow_dispatch
     
 jobs:
-  # This workflow contains a single job called "greet"
+  
   execute-test:
     
     runs-on: self-hosted
