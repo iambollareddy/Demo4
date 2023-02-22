@@ -3,8 +3,7 @@
 name: Demo4
 
 
-on:
-  workflow_dispatch:
+on:  workflow_dispatch
     
 jobs:
   
